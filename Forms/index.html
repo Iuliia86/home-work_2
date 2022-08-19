@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div><a href="../index.html">На головну (вибір завдання)</a></div>
+    <h1>Форма реєстрації користувача</h1>
+    <form
+      action="mailto:olkhovyk.iuliia@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <fieldset>
+        <legend>About yourself:</legend>
+        <label>
+          Name
+          <input type="text" /></label
+        ><br />
+        <label>
+          Address
+          <input type="text" /></label
+        ><br />
+        <label>
+          Age
+          <input type="number" min="16" max="100" /></label
+        ><br />
+        <label>
+          Email
+          <input type="email" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Place of work:</legend>
+        <label>
+          Address of work
+          <input type="text" /></label
+        ><br />
+        <label
+          >Work experience
+          <input type="text" />
+        </label>
+        <br />
+        <label
+          >Start date
+          <input type="date" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Statistical questionnaire:</legend>
+        <label
+          >How do you assess the work of the president <br />
+          <input type="range" min="1" max="5" list="marks" />
+          <datalist id="marks">
+            <option value="1">Very bad</option>
+            <option value="2">Bad</option>
+            <option value="3">Normal</option>
+            <option value="4">Good</option>
+            <option value="5">Very good</option>
+          </datalist>
+        </label>
+        <br />
+        <label
+          >Comment on the last election<br />
+          <textarea cols="50" rows="5"></textarea></label
+        ><br />
+        <label
+          >The best month for vacation
+          <select name="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your priorities:</legend>
+        <p>
+          What coffee do you prefer? <br />
+          <label
+            >Espresso
+            <input type="radio" name="coffee" value="Espresso" />
+          </label>
+          <label
+            >Americano
+            <input type="radio" name="coffee" value="Americano" />
+          </label>
+          <label
+            >Late
+            <input type="radio" name="coffee" value="Late" />
+          </label>
+        </p>
+        <p>
+          What places of rest do you prefer? <br />
+          <label>
+            <input type="checkbox" name="rest" value="Croatia" /> Croatia
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="rest" value="Montenegro" />
+            Montenegro
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="rest" value="Albania" /> Albania
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="rest" value="Bulgaria" /> Bulgaria
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="rest" value="Tenerife" /> Tenerife
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="rest" value="Egypt" /> Egypt
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="rest" value="Turkey" /> Turkey
+          </label>
+        </p>
+        <p>
+          <label
+            >What car do you prefer?
+            <select name="auto">
+              <option value="Audi">Audi</option>
+              <option value="BMW">BMW</option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="Kia">Kia</option>
+              <option value="Skoda">Skoda</option>
+              <option value="Mazda">Mazda</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label
+            >Favorite vegetables
+            <select name="vegetables">
+              <optgroup label="Root crops (Коренеплоди)">
+                <option value="carrots">carrots</option>
+                <option value="beets">beets</option>
+                <option value="radishes">radishes</option>
+                <option value="parsley">parsley</option>
+              </optgroup>
+              <optgroup label="Cabbage (Капустяні)">
+                <option value="white_cabbage">white cabbage</option>
+                <option value="red_cabbage">red cabbage</option>
+                <option value="brussels_cabbage">Brussels cabbage</option>
+                <option value="broccoli">broccoli</option>
+              </optgroup>
+              <optgroup label="Vegetable crops (Плодові овочеві культури)">
+                <option value="tomato">tomato</option>
+                <option value="cucumber">cucumber</option>
+                <option value="pepper">pepper</option>
+                <option value="pumpkin">pumpkin</option>
+                <option value="melon">melon</option>
+                <option value="sweet_corn">sweet corn</option>
+              </optgroup>
+            </select>
+          </label>
+        </p>
+      </fieldset>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
